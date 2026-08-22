@@ -199,25 +199,27 @@ export default function Hero() {
   "
 >
 
-  <div
-    className="
-      aspect-[4/5]
-      w-full
-      max-w-xl
-      overflow-hidden
-      rounded-[40px]
-    "
-  >
+<div
+  className="
+    aspect-[4/5]
+    w-full
+    max-w-xl
+    overflow-hidden
+    rounded-[40px]
+    md:aspect-[4/5]
+  "
+>
 
     <img
       src={heroImage}
       alt="Aurora Ebony Allied Health occupational therapy session"
-      className="
-        h-full
-        w-full
-        object-cover
-        object-center
-      "
+className="
+  h-full
+  w-full
+  object-cover
+  object-[50%_25%]
+  md:object-center
+"
     />
 
   </div>
