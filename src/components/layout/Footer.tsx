@@ -53,7 +53,7 @@ export default function Footer() {
 
            {/* BRAND */}
 
-<div className="flex w-full flex-col items-start">
+<div className="flex w-full flex-col items-center md:items-start">
 
   <div
   className="
@@ -74,13 +74,12 @@ export default function Footer() {
 </div>
 
   <p
-    className="
-      mt-2
-      max-w-md
-      text-left
-      text-base
-      leading-8
-      text-[#547C78]
+className="
+  mt-2
+  max-w-md
+  text-center
+  md:text-left
+  text-base
     "
   >
     Supporting individuals and families through personalised
@@ -92,7 +91,7 @@ confidence and meaningful participation in everyday life.
 
 {/* CONTACT */}
 
-<div className="flex flex-col items-start">
+<div className="flex flex-col items-center md:items-start">
 
   <p
     className="
@@ -221,7 +220,7 @@ max-w-none
 
             {/* COMPANY */}
 
-            <div className="flex w-full flex-col items-start">
+            <div className="flex w-full flex-col items-center md:items-start">
 
               <p
                 className="
@@ -301,7 +300,7 @@ Referrals
 
             {/* ACKNOWLEDGEMENT */}
 
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-center md:items-start">
 
 <p
   className="
@@ -320,11 +319,13 @@ Referrals
 </p>
 
 
-              <p
-                className="
-                translate-y-4
-                  mt-12
-                  text-sm
+<p
+className="
+translate-y-4
+mt-12
+text-center
+md:text-left
+text-sm
 leading-7
 text-[#547C78]
 md:text-base

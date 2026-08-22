@@ -58,7 +58,7 @@ export default function CTA() {
 
             {/* LEFT */}
 
-            <div>
+            <div className="text-center md:text-left">
 
               <h2
                 className="
@@ -118,14 +118,17 @@ export default function CTA() {
 
             {/* RIGHT */}
 
-            <div
-              className="
-                flex
-                items-end
-                justify-between
-                gap-30
-              "
-            >
+          <div
+className="
+flex
+flex-col
+items-center
+justify-between
+gap-10
+md:flex-row
+md:items-end
+"
+>
 
 
               <div
@@ -176,18 +179,18 @@ export default function CTA() {
 
 
 
-              <div
-                className="
-                  hidden
-                  text-right
-                  md:block
-                "
-              >
+<div
+className="
+text-center
+md:text-right
+"
+>
 
                 <p
                   className="
                     script-font
                     text-3xl
+                    text-center
                     leading-tight
                     text-white/90
                   "

@@ -177,41 +177,29 @@ className="
     flex
     justify-center
   "
-  initial={{
-    opacity:0,
-    y:20,
-  }}
-  animate={{
-    opacity:1,
-    y:0,
-  }}
-  transition={{
-    duration:0.9,
-    delay:0.2,
-  }}
 >
-
-<div
-  className="
-    aspect-[4/3]
-    w-full
-    max-w-lg
-    overflow-hidden
-    rounded-[32px]
-    md:aspect-[4/5]
-  "
->
+  
+  <div
+    className="
+      aspect-[4/5]
+      max-h-[520px]
+      w-full
+      max-w-lg
+      overflow-hidden
+      rounded-[32px]
+    "
+  >
 
     <img
       src={heroImage}
       alt="Aurora Ebony Allied Health occupational therapy session"
-className="
-  h-full
-  w-full
-  object-cover
-  object-[50%_25%]
-  md:object-center
-"
+      className="
+        h-full
+        w-full
+        object-cover
+        object-top
+        md:object-center
+      "
     />
 
   </div>

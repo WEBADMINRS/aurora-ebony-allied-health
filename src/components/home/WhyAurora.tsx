@@ -142,6 +142,7 @@ export default function WhyAurora() {
                       className="
                         mx-auto
                         translate-y-5
+                        text-center
                         mt-6                 
                         max-w-xs
                         text-m

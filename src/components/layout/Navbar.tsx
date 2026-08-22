@@ -55,14 +55,14 @@ const links = [
 
     return (
       <header
-        className={`
-          fixed
-          left-0
-          right-0
-          top-0
-          z-50
-          transition-colors
-          duration-300
+  className={`
+    fixed
+    left-0
+    right-0
+    top-0
+    z-[999]
+    w-full
+    will-change-transform
           ${
             scrolled
               ? "border-b border-slate-200 bg-white/95 backdrop-blur-xl"
