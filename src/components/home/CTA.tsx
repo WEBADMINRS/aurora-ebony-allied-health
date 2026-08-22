@@ -2,8 +2,6 @@ import Container from "../layout/Container";
 import Button from "../ui/Button";
 import Reveal from "../ui/Reveal";
 
-import ctaBackground from "../../assets/cta-background.png";
-
 import {
   Heart,
   UserRound,
