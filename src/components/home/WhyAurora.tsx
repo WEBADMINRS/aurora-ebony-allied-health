@@ -28,14 +28,15 @@ const values = [
 
 export default function WhyAurora() {
   return (
-    <section
-      className="
-        bg-[#547C78]
-        py-24
-        text-white
-        md:py-32
-      "
-    >
+<section
+  className="
+    overflow-hidden
+    bg-[#547C78]
+    py-24
+    text-white
+    md:py-32
+  "
+>
 
       <Container>
 
@@ -72,15 +73,15 @@ export default function WhyAurora() {
 
 
 
-          <div
+ <div
   className="
     mx-auto
     mt-20
     grid
-    max-w-9xl
+    max-w-6xl
     gap-16
     md:grid-cols-3
-    md:gap-50
+    md:gap-12
   "
 >
 
@@ -95,11 +96,14 @@ export default function WhyAurora() {
                   delay={index * 0.1}
                 >
 
-                  <div
-                    className="
-                      text-center
-                    "
-                  >
+<div
+className="
+  flex
+  flex-col
+  items-center
+  text-center
+"
+>
 
                     <div
                       className="

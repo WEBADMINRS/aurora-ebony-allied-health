@@ -91,7 +91,7 @@ confidence and meaningful participation in everyday life.
 
 {/* CONTACT */}
 
-<div className="flex flex-col items-center md:items-start">
+<div className="flex flex-col items-start max-md:items-center max-md:text-center">
 
   <p
     className="
@@ -107,17 +107,19 @@ confidence and meaningful participation in everyday life.
   </p>
 
 
-  <div
-    className="
-      mt-8
-     w-full
-max-w-none
-      flex
-      flex-col
-      gap-5
-      text-[#547C78]
-    "
-  >
+<div
+  className="
+    mt-8
+    w-full
+    max-w-none
+    flex
+    flex-col
+    gap-5
+    text-[#547C78]
+    max-md:items-center
+    max-md:text-center
+  "
+>
 
     <div className="flex items-center gap-5">
       <MapPin
@@ -166,7 +168,7 @@ max-w-none
 >
 
   <a
-    href="https://www.instagram.com/rsassurancegroup/"
+    href="https://www.instagram.com/"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="Instagram"
@@ -190,7 +192,7 @@ max-w-none
 
 
   <a
-    href="https://www.linkedin.com/in/rriyan-salvator/"
+    href="https://www.linkedin.com/"
     target="_blank"
     rel="noopener noreferrer"
     aria-label="LinkedIn"
@@ -358,7 +360,7 @@ respect to all Aboriginal and Torres Strait Islander peoples today.
     pt-8
     flex
     flex-col
-    items-start
+    items-center
     gap-8
     text-center
     md:flex-row
@@ -369,34 +371,40 @@ respect to all Aboriginal and Torres Strait Islander peoples today.
 >
 
 
-            <p
-              className="
-                text-sm
-                text-slate-400
-              "
-            >
+<p
+  className="
+    order-3
+    text-sm
+    text-slate-400
+    md:order-none
+  "
+>
               © {new Date().getFullYear()} Aurora Ebony Allied Health. All rights reserved.
             </p>
 
 
 
-            <p
-              className="
-                text-sm
-                text-slate-400
-              "
-            >
-              Occupational Therapy • Physiotherapy • Allied Health
-            </p>
+<p
+  className="
+    order-2
+    text-sm
+    text-slate-400
+    md:order-none
+  "
+>
+  Occupational Therapy • Physiotherapy • Allied Health
+</p>
 
 
 
 <div
   className="
+    order-1
     flex
-    items-start
+    items-center
     justify-center
     gap-4
+    md:order-none
   "
 >
 

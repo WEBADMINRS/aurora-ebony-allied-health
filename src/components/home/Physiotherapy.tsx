@@ -63,6 +63,7 @@ export default function Physiotherapy() {
               <p
                 className="
                   mt-6
+                  translate-y-4
                   max-w-xl
                   text-base
                   leading-8

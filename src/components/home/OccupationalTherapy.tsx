@@ -84,6 +84,7 @@ export default function OccupationalTherapy() {
               <p
                 className="
                   mt-6
+                  translate-y-4
                   max-w-xl
                   text-base
                   leading-8
@@ -100,6 +101,7 @@ export default function OccupationalTherapy() {
               <div
                 className="
                   mt-8
+                  translate-y-4
                   grid
                   gap-4
                   sm:grid-cols-2
@@ -131,6 +133,7 @@ export default function OccupationalTherapy() {
     flex
     h-6
     w-6
+    
     shrink-0
     items-center
     justify-center
@@ -154,7 +157,7 @@ export default function OccupationalTherapy() {
 
 
 
-              <div className="mt-10">
+              <div className="mt-10" >
 
                 <Button
   to="/services#occupational-therapy"

@@ -46,14 +46,14 @@ export default function CTA() {
 
         <Reveal>
 
-          <div
-            className="
-              grid
-              items-center
-              gap-12
-              lg:grid-cols-[1.4fr_0.6fr]
-            "
-          >
+<div
+  className="
+    grid
+    items-center
+    gap-12
+    lg:grid-cols-[1.4fr_0.6fr]
+  "
+>
 
 
             {/* LEFT */}
@@ -93,13 +93,16 @@ export default function CTA() {
               </p>
 
 
-              <div
-                className="
-                  mt-7
-                  flex
-                  gap-3
-                "
-              >
+             <div
+  className="
+    mt-7
+    translate-y-4
+    flex
+    justify-center
+    gap-3
+    md:justify-start
+  "
+>
 
 <Button
   to="/contact"
@@ -118,16 +121,14 @@ export default function CTA() {
 
             {/* RIGHT */}
 
-          <div
-className="
-flex
-flex-col
-items-center
-justify-between
-gap-10
-md:flex-row
-md:items-end
-"
+<div
+  className="
+    grid
+    grid-cols-2
+    items-center
+    gap-4
+    md:gap-8
+  "
 >
 
 
@@ -135,7 +136,7 @@ md:items-end
                 className="
                   flex
                   flex-col
-                  gap-3
+                  gap-4
                 "
               >
 
@@ -181,20 +182,19 @@ md:items-end
 
 <div
 className="
-text-center
-md:text-right
+text-right
 "
 >
 
-                <p
-                  className="
-                    script-font
-                    text-3xl
-                    text-center
-                    leading-tight
-                    text-white/90
-                  "
-                >
+<p
+className="
+script-font
+text-3xl
+text-right
+leading-tight
+text-white/90
+"
+>
                   People.
                   <br />
                   Potential.
