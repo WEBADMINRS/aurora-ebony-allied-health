@@ -21,20 +21,21 @@ export default function Hero() {
 
       <Container>
 
-        <div
-          className="
-            grid
-            items-center
-            gap-12
-            lg:grid-cols-[0.9fr_1.1fr]
-            lg:gap-16
-          "
-        >
+<div
+className="
+  grid
+  items-center
+  gap-12
+  lg:grid-cols-[0.9fr_1.1fr]
+  lg:gap-16
+"
+>
 
 
           {/* LEFT CONTENT */}
 
           <motion.div
+  className="lg:order-1"
             initial={{
               opacity:0,
               y:30,
@@ -91,19 +92,7 @@ export default function Hero() {
               designed around each person's goals, abilities
               and everyday life.
             </p>
-
-
-
-            <div
-              className="
-                mt-10
-                translate-y-6
-                flex
-                flex-col
-                gap-4
-                sm:flex-row
-              "
-            >
+            <div className="mt-10 translate-y-6 flex flex-col gap-4 sm:flex-row">
 
               <Button
                 to="/contact"
@@ -121,6 +110,7 @@ export default function Hero() {
 
 
             </div>
+
 
 
 
@@ -181,6 +171,12 @@ export default function Hero() {
 {/* HERO IMAGE */}
 
 <motion.div
+  className="
+    order-2
+    lg:order-2
+    flex
+    justify-center
+  "
   initial={{
     opacity:0,
     y:20,
@@ -193,19 +189,15 @@ export default function Hero() {
     duration:0.9,
     delay:0.2,
   }}
-  className="
-    flex
-    justify-center
-  "
 >
 
 <div
   className="
-    aspect-[4/5]
+    aspect-[4/3]
     w-full
-    max-w-xl
+    max-w-lg
     overflow-hidden
-    rounded-[40px]
+    rounded-[32px]
     md:aspect-[4/5]
   "
 >
@@ -225,7 +217,6 @@ className="
   </div>
 
 </motion.div>
-
 
         </div>
 
