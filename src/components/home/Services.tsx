@@ -1,9 +1,11 @@
 import Container from "../layout/Container";
 import Reveal from "../ui/Reveal";
-
+import { Link } from "react-router-dom";
 import occupationalTherapyCard from "../../assets/occupational-therapy-card.png";
 import physiotherapyCard from "../../assets/physiotherapy-card.png";
 import podiatrySpeechCard from "../../assets/podiatry-speech-card.png";
+import positiveBehaviourSupportCard from "../../assets/positive-behaviour-support-card.png";
+
 
 
 const services = [
@@ -20,6 +22,13 @@ const services = [
       "Supporting movement, strength, mobility and physical confidence through personalised therapy programs.",
     image: physiotherapyCard,
     link: "/services#physiotherapy",
+  },
+  {
+    title: "Positive Behaviour Support",
+    text:
+      "Supporting individuals and their support networks through practical strategies that promote wellbeing, independence and meaningful participation.",
+    image: positiveBehaviourSupportCard,
+    link: "/services#positive-behaviour-support",
   },
   {
     title: "Podiatry & Speech Pathology",
@@ -120,7 +129,8 @@ export default function Services() {
               mt-14
               grid
               gap-6
-              md:grid-cols-3
+              md:grid-cols-2
+lg:grid-cols-4
             "
           >
 
@@ -132,14 +142,17 @@ export default function Services() {
               >
 
                 <div
-                  className="
-                    overflow-hidden
-                    rounded-3xl
-                    border
-                    border-[#E8D8CC]
-                    bg-[#FAF7F4]
-                  "
-                >
+  className="
+    flex
+    h-full
+    flex-col
+    overflow-hidden
+    rounded-3xl
+    border
+    border-[#E8D8CC]
+    bg-[#FAF7F4]
+  "
+>
 
 
                   {/* IMAGE PLACEHOLDER */}
@@ -165,7 +178,14 @@ export default function Services() {
 </div>
 
 
-                  <div className="p-6">
+                  <div
+  className="
+    flex
+    flex-1
+    flex-col
+    p-6
+  "
+>
 
 
                     {service.comingSoon && (
@@ -195,7 +215,7 @@ export default function Services() {
                       className="
                         mt-4
                         font-serif
-                        text-2xl
+                        text-xl
                         tracking-[-0.04em]
                         text-[#253238]
                       "
@@ -218,16 +238,18 @@ export default function Services() {
 
 
 
-                    <button
-                      className="
-                        mt-6
-                        text-sm
-                        font-semibold
-                        text-[#B86F7D]
-                      "
-                    >
-                      Learn More →
-                    </button>
+                    <Link
+  to={service.link}
+  className="
+    mt-4
+    inline-block
+    text-sm
+    font-semibold
+    text-[#B86F7D]
+  "
+>
+  Learn More →
+</Link>
 
 
                   </div>

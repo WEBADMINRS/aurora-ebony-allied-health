@@ -17,13 +17,17 @@ const links = [
         href: "/services#occupational-therapy",
       },
       {
-        label: "Physiotherapy",
-        href: "/services#physiotherapy",
-      },
-      {
-        label: "All Services",
-        href: "/services",
-      },
+  label: "Physiotherapy",
+  href: "/services#physiotherapy",
+},
+{
+  label: "Positive Behaviour Support",
+  href: "/services#positive-behaviour-support",
+},
+{
+  label: "All Services",
+  href: "/services",
+},
     ],
   },
   {
@@ -54,7 +58,7 @@ const links = [
     }, []);
 
     return (
-      <header
+ <header
   className={`
     fixed
     left-0
@@ -62,7 +66,6 @@ const links = [
     top-0
     z-[999]
     w-full
-    will-change-transform
           ${
             scrolled
               ? "border-b border-slate-200 bg-white/95 backdrop-blur-xl"

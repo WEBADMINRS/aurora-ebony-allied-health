@@ -155,7 +155,7 @@ className="
                 "
               >
                 Supporting NDIS participants, families and
-                communities across Victoria.
+                communities across Australia.
               </p>
 
 
@@ -179,16 +179,17 @@ className="
   "
 >
   
-  <div
-    className="
-      aspect-[4/5]
-      max-h-[520px]
-      w-full
-      max-w-lg
-      overflow-hidden
-      rounded-[32px]
-    "
-  >
+<div
+  className="
+    aspect-[4/5]
+    max-h-[calc(100vh-80px)]
+    w-full
+    max-w-lg
+    overflow-hidden
+    rounded-[32px]
+    lg:max-h-[520px]
+  "
+>
 
     <img
       src={heroImage}

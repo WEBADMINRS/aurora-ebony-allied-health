@@ -4,6 +4,7 @@ import Footer from "../components/layout/Footer";
 import ServicesHero from "../components/services/ServicesHero";
 import OccupationalTherapy from "../components/services/OccupationalTherapy";
 import Physiotherapy from "../components/services/Physiotherapy";
+import PositiveBehaviourSupport from "../components/services/PositiveBehaviourSupport";
 import SupportApproach from "../components/services/SupportApproach";
 import ReferralPartners from "../components/services/ReferralPartners";
 
@@ -17,8 +18,8 @@ export default function Services() {
     <>
 
       <SEO
-        title="Allied Health Services | Occupational Therapy & Physiotherapy"
-        description="Aurora Ebony Allied Health provides personalised Occupational Therapy and Physiotherapy services designed around each person's goals and everyday life."
+        title="Allied Health Services | Occupational Therapy, Physiotherapy & Positive Behaviour Support"
+        description="Aurora Ebony Allied Health provides personalised Occupational Therapy, Physiotherapy and Positive Behaviour Support services designed around each person's goals, abilities and everyday life."
       />
 
 
@@ -32,6 +33,8 @@ export default function Services() {
         <OccupationalTherapy />
 
         <Physiotherapy />
+
+        <PositiveBehaviourSupport />
 
         <SupportApproach />
 
