@@ -71,34 +71,36 @@ const links = [
         `}
       >
 
-        <div
-          className="
-            mx-auto
-            flex
-            h-20
-  md:h-28
-            max-w-[1440px]
-            items-center
-            justify-between
-            px-5
-            md:px-12
-            xl:px-20
-          "
-        >
+<div
+  className="
+    mx-auto
+    flex
+    h-16
+    md:h-28
+    max-w-[1440px]
+    items-center
+    justify-between
+    px-4
+    md:px-12
+    xl:px-20
+  "
+>
 
-          <Link
-            to="/"
-            onClick={() => setOpen(false)}
-          >
+<Link
+  to="/"
+  onClick={() => setOpen(false)}
+  className="shrink-0"
+>
 
             <img
               src={logo}
               alt="Aurora Ebony Allied Health"
-              className="
-                h-24
-                w-auto
-                object-contain
-              "
+className="
+  h-12
+  md:h-24
+  w-auto
+  object-contain
+"
             />
 
           </Link>
@@ -222,11 +224,13 @@ const links = [
 
 
 
- <Link
+<Link
   to="/contact?type=assessment"
   className="
     group
     ml-8
+    hidden
+    lg:flex
     whitespace-nowrap
     rounded-full
     bg-[#B86F7D]
@@ -261,15 +265,17 @@ const links = [
 
 
 
-        <button
-          onClick={() => setOpen(!open)}
-          className="
-            flex
-            flex-col
-            gap-2
-            lg:hidden
-          "
-        >
+<button
+  onClick={() => setOpen(!open)}
+  className="
+    flex
+    flex-col
+    gap-2
+    lg:hidden
+    ml-4
+    shrink-0
+  "
+>
 
           <span className="h-[2px] w-7 bg-[#253238]" />
           <span className="h-[2px] w-7 bg-[#253238]" />
@@ -286,7 +292,7 @@ const links = [
 
         <div
           className="
-            max-h-[calc(100vh-80px)]
+            max-h-[calc(100vh-64px)]
             overflow-y-auto
             border-t
             border-slate-200
