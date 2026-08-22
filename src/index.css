@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+
+:root {
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #253238;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+button {
+  font-family: inherit;
+}
+
+
+.script-font {
+  font-family: "Allura", cursive;
+}
+
+
+::selection {
+  background: #B86F7D;
+  color: #ffffff;
+}
+@layer components {
+  .input-style {
+    @apply
+      w-full
+      rounded-xl
+      border
+      border-[#253238]/20
+      bg-white
+      px-5
+      py-4
+      text-sm
+      text-[#253238]
+      outline-none
+      transition
+      focus:border-[#B86F7D];
+  }
+}
